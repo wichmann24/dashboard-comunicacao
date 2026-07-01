@@ -2,6 +2,29 @@
 <html>
 <head>
 <title>Dashboard Interno</title>
+<style>
+  /* Destaque visual para o usuário e a postagem atualmente selecionados */
+  li.selecionado {
+    background-color: #d6e8ff;
+    font-weight: bold;
+  }
+
+  /* Mensagens de status (carregando / erro) */
+  li.mensagem-status {
+    font-style: italic;
+    color: #555;
+    cursor: default;
+  }
+
+  li.mensagem-erro {
+    color: #b00020;
+    font-style: normal;
+  }
+
+  li[data-clicavel="true"] {
+    cursor: pointer;
+  }
+</style>
 </head>
 
 <body>
